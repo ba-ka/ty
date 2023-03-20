@@ -1,0 +1,179 @@
+body {
+	background-color: #222222;
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+#__next {
+	max-width: 360px;
+	margin: 0 auto;
+}
+
+.page {
+	max-width: 360px;
+	max-height: 80vh;
+	margin: 10vh 0;
+	overflow-y: auto;
+	padding: 0 10px;
+}
+
+.page a,
+  .page a:visited,
+  .page a:link {
+	color: #ffffff;
+	font-style: italic;
+}
+
+.page h1.title {
+	letter-spacing: 2px;
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 18pt;
+}
+
+.page .banner {
+	overflow: hidden;
+	height: 125px;
+	position: relative;
+}
+
+.page .banner img {
+	min-height: 100% !important;
+	min-width: 100% !important;
+	height: unset !important;
+	left: 50% !important;
+	top: 50% !important;
+	position: absolute !important;
+	transform: translate(-50%, -50%);
+}
+
+.page .copyright {
+	margin-top: 25px;
+}
+
+.page img {
+	width: 100%;
+	background: #2e2e2e;
+}
+
+.page .content ul {
+	padding-left: 25px;
+}
+
+.page .portfolio-title {
+	letter-spacing: 2px;
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+.page .portfolio-list {
+	margin-bottom: 30px;
+}
+
+.page .portfolio-list ul {
+	margin-top: 5px;
+	margin-bottom: 14px;
+}
+
+.page nav ul {
+	padding: 0;
+	margin: 15px 0;
+	list-style: none;
+}
+
+.page nav ul li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.page nav ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 14pt;
+	font-style: italic;
+}
+
+.page nav ul li a:hover {
+	text-decoration: underline;
+}
+
+.page nav ul li:nth-last-child(1) {
+	margin-right: 0;
+}
+
+.page.home {
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.page.home .description {
+	font-size: 9pt;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.page.home img {
+	border-radius: 100%;
+	width: 250px;
+}
+
+.page.home .copyright {
+	margin-bottom: 0;
+}
+
+.page.blog .blog-list a {
+	background: #2e2e2e;
+	padding: 10px 10px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	font-style: normal;
+	display: block;
+}
+
+.page.blog .blog-list a h2 {
+	font-size: 12pt;
+	margin: 0;
+}
+
+.page.blog-detail h1 {
+	font-size: 16pt;
+}
+
+.page.blog-detail h2 {
+	font-size: 14pt;
+}
+
+.page.blog-detail h3 {
+	font-size: 13pt;
+}
+
+.page.blog-detail h4 {
+	font-size: 12pt;
+}
+
+.page.blog-detail h5 {
+	font-size: 11pt;
+}
+
+.page.blog-detail h6 {
+	font-size: 10pt;
+}
+
+@media only screen and (max-width: 360px) {
+	.page {
+		margin: 0;
+		max-height: 100vh;
+	}
+
+	.page.home img {
+		max-width: 250px;
+		width: 100%;
+	}
+}
